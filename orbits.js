@@ -168,7 +168,7 @@ function registerName() {
     ticket.passengers[newFnameProp] = document.getElementById("fname").value;
     ticket.passengers[newLnameProp] = document.getElementById("lname").value; 
     // add entered name to passenger list in ticket section 
-    passengerName.innerHTML = ticket.passengers + " " + ticket.passengers;
+    passengerName.innerHTML = ticket.passengers[newFnameProp] + " " + ticket.passengers[newLnameProp];
     passengerList.appendChild(passengerName);
     // clear first and last names from form
     document.getElementById("fname").value = "";
